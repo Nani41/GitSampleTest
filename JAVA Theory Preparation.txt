@@ -1,0 +1,288 @@
+JAVA Theory Preparation
+
+-> Define Java?
+A) Java is an high level object oriented programming language, which is developed by James gosling in 1995, and java is used in many applications like web applications, mobile applications, desktop applications.
+
+-> Features of java?
+A) -> Simple: Java is simple and easy to learn beacuse syntax is clear to understand.
+-> Object oriented: Java follows object oriented programming, means in java everything is considered as objects!
+-> Platform independent: Write once, and run anywhere, since we will get .class file means byte code which makes java is platform independent.
+-> Robust: Java has mechansim to handle un expected events, by using exception handling.
+
+-> Difference Between C and Java?
+1) C is a programming language - And Java is also an programming language.
+2) C Was developed by Dennis retchie in 1975 - And java was developed by James golsing in 1995.
+3) C follows procedure oriented - And java follows Object oriented.
+4) C Doesnot supports OOPS Concept - And java supports OOPS Concept.
+5) C Doesnot support Exception handling - Java Supports Exception handling.
+6) C Programming excution based on Compiler - Java programming is based on Both compiler and interpreter.
+7) C Programming there is no concept of interface - in java there is concept about interface.
+
+-> What is JDK, JVM, JRE.
+1) JDK: Java Development Kit which consists of JRE consists of JVM, first thing is .java file is given to the JRE which generates the .class file, and that is given to jvm that will convert into machine code.
+2) JRE: Java runtime environment, which is used to run Java programs and produce the .class file
+3) JVM: Java virtual machine, which is used to execute the .class or byte code and generates the machine code.
+
+-> Explain Main Method?
+A) Main Method is like an entry point where execution of a program begins.
+Public -> Means access modifier, and we can access from anywhere.
+Static -> No need to create an object
+Void -> Main method doesnot return anything
+Main -> Method name which is recognized by JVM
+String[] args -> Command line arguments which is optional!
+
+-> Variables and data types?
+A) Variable is a naming container, since java is a strictly typed language if we want use any variables we must and declare before using them.
+About data types: We need to specify the spefic data type before storing in variable.
+There are two types in java like:
+Primitive: Byte, short, int, long, Float, Double, Char, Boolean.
+Non-Primitive: Strings, Arrays, Class, and interface.
+
+-> Type Casting in Java?
+A) Converting one data type to another data type, And type casting in two types
+Implicit: Means automatic conversion, smaller to big data types (Ex: int A = 10; double = A;)
+Explict: Means manual conversion, larger to smaller data types (Ex: double d = 20.0; int num = (int) A;)
+String to int <->
+Ex: String str = "123";
+int num = Integer.parseInt(str);
+
+int num = 123;
+String str = String.valueOf(num);
+
+-> What are control flow statements?
+A) Which specifies the order of execution based on condition.
+
+-> What is Array?
+A) An array is a collection of homogenious elements, which stores multiple values in a single variable, and size of the array is fixed.
+
+-> What about Strings?
+A) A String is a sequence of characters, which are immutable, means the value cannot be changed once if it is created.
+
+-> Wheat is Heap, and Stack Memory?
+A) Heap: Is a dynamic memory location, where memory for objects is created at run time, and unused objects is removed by garbage collector.
+Stack: It will store method calls, local variables like that!
+Garbage collection: It will automatically removes un-used objects from heap memory, and JVM Makes momory free.
+
+-> Exception handling?
+A) Java has a mechanism to handle un-expected events, which will distrub the normal flow of a program.
+And exceptions are like:
+Checked Exceptions: Checked at Compile time, Ex: ClassNotFoundException, and FileNotFoundException.
+Un-Checked Exceptions: Checked at run time, Ex: ArrayOutOfBoundsException, Arthmetic Exception.
+
+try: A block contains, an exception that might be thow an error.
+catch: Which handles exception from try block.
+finally: A Block will always execute, even there is no excpetion or not.
+throw: Used to throw an exception explictely.
+throws: Used in method signature, that might throw an error.
+
+-> About Collections?
+A) Java provides set of builtin classes and interfaces, to store and manipulate the data.
+Collection is a interface, which are impliments the List, Queue, Set.
+
+List: List is an interface, which externds the Collections.
+ArrayList: 
+    - It is a class which impliments the List interface.
+    - it is a dynamic array, it will increse the size by 50%, and allow duplicates, and Arraylist is not synchornized.
+    - Better for fast access.
+Vector: 
+    - it is a class which impliments the list interface.
+    - it is a dynamic array, it will increase its size by 100%, and allow duplicates, and Vector is synchronized.
+Linked List: 
+    - Better for fast insert/delete operations.
+
+Queue: A first in first out data-structure, that follows first in, first out principle.
+Simple Queue with linked list: Useful for simple fifo operations.
+Priority Queue: Elements will be sorted automitacally, based on natural order.
+Dequeue: A double ended Queue, Where we can insert and delete from both ends of the list.
+
+Set: it is a part of collection framework
+Hash Set: Does not maintain any insertion order, And stores only unique elements
+Linked Hash Set: Allows only unique elements, and maintains insertion order.
+Tree Set: Allows only unique elements, and maintains sorted order.
+
+Map: It is a part of collection frame work, and stores a collection of key value pairs.
+Hash Map: 
+    - Contains unique keys, and Hash map doesn't maintain any insertion order, and it is not synchronized!
+Linked Hash Map:
+    - Contains unique keys, and doesn't maintain any insertion order, and it is not synchronized!
+Hash Table:
+    - Contains unique keys, and doesn't allow any null values, and doesnot maintain insertion order, it is synchronized.
+Tree Map:
+    - Contains unique elements, and does not allow any null values, and it maintains insertion order.
+
+OOPS::
+    - Abstraction
+    - Polymorphism
+    - Inheritance
+    - Encapsulation
+
+1) Abstraction: The Process of hiding its implimentation, And showing essential functonality to the user.
+We can achieve abstraction in two ways abstract class, and through interface.
+-> Abstract Class: An abstract class is declared by using abstract keyword, and an abstract class may have implimented and non implimented methods.
+-> Abstract Method: An abstract method is delclared by using abstract keyword, and defined without using any implimentation, and child class need to be provide!
+
+2) Polymorphism: Single object perfoming many actions in many ways, lets say for example if im a object, i can have multiple behaviours based on context.
+-> Compile time polymorphism: Achieved through method overloading: Means a class may have multiple methods with same name, but different parameters.
+-> Run time polymorphism: Achieved through method overriding: Means A child class can override the parent class implimentation.
+
+3) Inheritance: Means relationship between two classes, like i would say child class or sub class acquring properties of parent or base class.
+Single: 
+Multiple: 
+Multilevel: 
+Hybrid: 
+Hierachiel: 
+
+4) Encapsulation: Binding varibales and methods into a single entity!
+
+-> What is multithreading?
+A) Java has a ability to execute multiple threads within a single process.
+A thred is a simple and light weight process, that runs independently.
+
+-> How to create a thread?
+A) By extending thread class, and by implimenting runnable interface.
+
+-> About thread lifecycle?
+A) 
+   - New() : A State where thread is created but not started.
+   - Runnable() : Ready to run.
+   - Running() : Execute the run method.
+   - Waiting() : waiting for resource to allocate.
+   - Terminated() : Execution finished.
+
+-> What is synchronization?
+A) When multiple threads access same resources, race condition may occur because of data modification, so synchronization will prevent this!
+
+-> What is a deadock, and race condition?
+A) Deadlock: Two or more threads waiting for each other for execution, race condition: Multiple threads modifying the same data or resource.
+
+-> What is Servlets and JSP in Java?
+A) Both are used to create dynmic web applications:
+Servlets: A Java Program that will handle HTTP Request and response in web applcations. ( Useful for to insert a business logic )
+JSP: Stands for ( Java Sever pages ), contains HTML and Java code, to create a dynamic content. ( Better to insert an UI Code which will display content )
+
+Lets say for Example:
+If i want fetch some content from server, so servelts will process my input, and jsp will display my content.
+
+-> What is JDBC?
+A) JDBC Stands for java database connectivity, so it is kind of API to to connect with the data base.
+
+-> What are the java 8 features?
+A) - Lambda Expressions: It is useful to reduce bioler plate code, it will take some parameters and return a new value, mostly it is sued in functional programming interface.
+    -  Functional interface: it is a java 8 feature, contains only one abstract method, and may have multiple default and static methods.
+
+-> What is Stream API?
+A) in order to process the collections, we can use stream API, by applying filter, map, sort like that, without modifying orginal collection and ensuring parllel execution!
+
+:: Spring -> 
+
+IOC: Inversion of control, will take care about object creation, basically it is principle, and dependency injection will inject the objects. no need of manual creation of objects.
+1) Constructor injection.
+2) Setter injection.
+3) Filed injection.
+
+Spring Boot: Automataic configuration, and it has built in Servers. means developers no need to add manual tomcat server, and no need to initlize the xml configurations and stuff.
+
+Controller: to return web Ui.
+RestController: it is a combination of Controller and response body, which return JSON, XML format!
+
+Request Mapping: Base URL for the entire contoller class
+@GetMapping, @PostMapping, @PutMapping, and @DeleteMapping
+
+--- SPRING ---
+What is the Spring Framework?
+-> Spring frame work is a powerful framework, which is used to develop JEE Applications, and web applications.
+-> the featurs of spring will be like:
+1) Dependency Injection (DI): Reduce boiler plate code to insert objects;
+2) Spring MVC: To create web applications and and REST API's
+3) Spring Boot: Which has default configurations, and built in Servers like tomcat, jetty.
+
+What is inversion of control?
+-> It is just a specification, where object creation and dependency management handled by spring
+What is Dependency Injection?
+-> Objects are injected automatically or implictley, with out manually, which is done by Spring frame work.
+-> We can do that by 3 way like:
+1) Constructor injection: Dependencies are passed via the constructor.
+2) Setter Injection: Dependencies are set via setter methods.
+3) Field Injection: Dependencies are injected directly into fields.
+
+How do you configure Spring beans using XML and Java-based configuration?
+-> By using  @Configuration and @Bean
+
+What is the difference between @Component, @Service, @Repository, and @Controller annotations?
+These are called streo type annotations, helps to define objects.
+-> @Component: annotation for any Spring-managed bean.
+-> @Service: service class that contains business logic.
+-> @Repository: Which contains data access points.
+-> @Controller: a class as a Spring MVC controller (for handling HTTP requests).
+
+What is the use of the @Autowired annotation?
+-> @Autowired is a Spring annotation used for automatic dependency injection, It tells Spring to automatically inject the required dependencys.
+
+What is Spring Boot?
+-> Spring boot it is a java frame work, which is built on top layer of spring frame work, it has features like auto configuration, and built-in servers like tomcat, jetty like that, and also provides starter dependiences like starter-web, starter-jpa.
+
+What is the role of @SpringBootApplication annotation?
+-> First thing is, it is like an entry point, and it is a combination of three like    
+     @Configuration: Marks the class as a Java configuration class.
+  + @EnableAutoConfiguration: Tells Spring Boot to automatically configure beans
+  + @ComponentScan: Tells Spring to scan the package and sub-packages for:
+     @Component
+     @Service
+     @Repository
+     @Controller
+
+What is the difference between @RestController and @Controller?
+-> Controller: Will return Web UI ex: return inded.html page.
+-> RestController: it a combination of Both Contoller and responsebody, and it returns like JSON, XML Data.
+
+What is @RequestMapping, and how is it used?
+-> It defines the base URL, and it is used to map the methods like Get, Post, Delete.
+
+::Spring Boot Interview Questions!
+1) What is Spring Boot?
+-> Which is built on the top layer of spring framework, which provides default configurations, and built-in servers like tomcat, jetty like that, and spring boot allows developers to create JEE or entireprice applications with less configurations!
+
+2) What are the advantages of using Spring Boot?
+-> Auto Configuration: You don’t have to write lots of XML.
+-> Built-in servers: like Tomcat, Jetty, undertow.
+-> Built-in Testing Support: to simplify unit and integration testing.
+
+3) What is the Spring Boot Starter?
+-> A set of dependency's which provides automatic or implicit dependinces, for example spring-boot-starter-web, For building web apps and REST APIs
+
+4) What does @SpringBootApplication annotation do?
+-> it is like a entry point, to the application: this annotation is a combination of three like   @Configuration + @EnableAutoConfiguration +  @ComponentScan
+-> @ComponentScan is a combination of @Component + @Service + @Repository + @Controller
+
+5) What is Dependency Injection in Spring?
+-> Objects are injected automatically or implictley, with out manually, which is done by Spring frame work Itself.
+basically it in done in three ways like:
+1) Constructor Injection: 
+2) Setter Injection:
+3) Field Injection: 
+
+6) What is autowired?
+-> we can use this annotation, where ever the object injection is required or needed!
+
+7) What is the difference between @Component, @Service, @Repository, and @Controller?
+@Component: To detect the spring managed bean!
+@Service: we will include our business logic.
+@Repository: a kind of access points for data.
+@Controller: we will handle HTTP requests!
+
+REST API: A Web Service to handle the data, with HTTP's Methods.
+
+8) What is the difference between @RestController and @Controller?
+-> @Controller: It returns the web UI pages, means index.html.=
+-> @RestController: Used for API's, and it returns JSON, XML
+
+9) What is @RequestMapping, @GetMapping, @PostMapping etc.?
+-> @RequestMapping: Is used to Handle all HTTP Methods like GET, PUT, POST, DELETE like that!
+-> @GetMapping: To fetch the data.
+-> @PostMapping: to submit the data.
+
+10) What is Spring JPA?
+-> Which stands for java persistance API, which enable to perform CRUD operations by using Java Objects, .save to create, .get to fetch like that!
+
+
+
